@@ -1,0 +1,44 @@
+.ball {
+  border-radius: 50%;
+  background: radial-gradient(circle, white, #000);
+  display: inline-block;
+}
+
+.ball1 {
+  width: 80px;
+  height: 80px;
+  animation: bounce 2s infinite;
+}
+
+.ball2 {
+  width: 120px;
+  height: 120px;
+  animation: bounce 5s infinite;
+}
+
+.ball3 {
+  width: 150px;
+  height: 150px;
+  animation: bounce 3s infinite;
+  justify-content: center;
+}
+
+/* Bounce */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-100px); /* Move up */
+  }
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7b2cbf; /* Purple background */
+}
